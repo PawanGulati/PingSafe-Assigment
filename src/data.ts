@@ -3,27 +3,27 @@ import { FilesAndFolderType } from "./App.interface";
 export const filesAndFolders: FilesAndFolderType[] = [
   {
     id: 1,
-    name: "folder1",
+    name: "public",
     isDirectory: true,
     items: [
       {
         id: 2,
-        name: "file1",
+        name: "index.ts",
         isDirectory: false,
       },
       {
         id: 3,
-        name: "folder101",
+        name: "assets",
         isDirectory: true,
         items: [
           {
-            id: 8,
-            name: "file2",
+            id: 4,
+            name: "image1.jpeg",
             isDirectory: false,
           },
           {
-            id: 9,
-            name: "file24",
+            id: 5,
+            name: "image2.jpeg",
             isDirectory: false,
           },
         ],
@@ -31,55 +31,40 @@ export const filesAndFolders: FilesAndFolderType[] = [
     ],
   },
   {
-    id: 4,
-    name: "file3",
-    isDirectory: false,
-  },
-  {
-    id: 5,
-    name: "folder2",
+    id: 6,
+    name: "src",
     isDirectory: true,
     items: [
       {
-        id: 6,
-        name: "file4",
+        id: 7,
+        name: "index.tsx",
+        isDirectory: false,
+      },
+      {
+        id: 8,
+        name: "index.css",
+        isDirectory: false,
+      },
+      {
+        id: 9,
+        name: "App.tsx",
+        isDirectory: false,
+      },
+      {
+        id: 10,
+        name: "App.css",
         isDirectory: false,
       },
     ],
   },
   {
-    id: 23,
-    name: "file23",
-    isDirectory: false,
-  },
-  {
-    id: 26,
-    name: "file26",
-    isDirectory: false,
-  },
-  {
-    id: 42,
-    name: "file42",
+    id: 11,
+    name: ".gitignore",
     isDirectory: false,
   },
   {
     id: 12,
-    name: "file12",
-    isDirectory: false,
-  },
-  {
-    id: 92,
-    name: "file92",
-    isDirectory: false,
-  },
-  {
-    id: 95,
-    name: "file95",
-    isDirectory: false,
-  },
-  {
-    id: 96,
-    name: "file96",
+    name: "package.json",
     isDirectory: false,
   },
 ];

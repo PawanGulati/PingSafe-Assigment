@@ -48,8 +48,9 @@ const SubmitContainer: React.FC<ISubmitContainersProps> = ({
       sx={{
         display: "flex",
         flexDirection: "column",
-        gap: "2rem",
+        gap: "1.5rem",
         flex: 1,
+        height: "45%",
       }}
     >
       <Box sx={{ display: "flex", gap: 2, alignSelf: "center" }}>

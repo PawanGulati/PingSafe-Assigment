@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import axios from "axios";
 import "./App.css";
 import { FilesAndFolderStateType, FilesAndFolderType } from "./App.interface";
 import { filesAndFolders } from "./data";
@@ -95,6 +94,9 @@ function App() {
     <div className="main-container">
       <Typography className="heading" variant="h4">
         Folder Path Generator
+      </Typography>
+      <Typography variant="h5" color="white" fontWeight={700} textAlign="left">
+        Directory Tree
       </Typography>
       <div className="folder-container">
         <FolderContent

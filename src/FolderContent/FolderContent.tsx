@@ -45,7 +45,7 @@ export const FolderContent: React.FC<{
                     gap={1}
                   >
                     <FolderCopyIcon sx={{ color: "gold" }} />
-                    <Typography variant="h6">{content.name}</Typography>
+                    <Typography variant="h6">/{content.name}</Typography>
                   </Stack>
                 }
                 control={

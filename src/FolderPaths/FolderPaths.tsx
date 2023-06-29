@@ -1,5 +1,5 @@
 import styles from "./FolderPaths.module.css";
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 interface IFolderPathsProps {
   pathForFiles: string[];
@@ -8,9 +8,14 @@ interface IFolderPathsProps {
 const FolderPaths: React.FC<IFolderPathsProps> = ({ pathForFiles }) => {
   return (
     <div className={styles.submitContainer}>
-      {pathForFiles.map((path) => (
-        <Typography variant="h6">{path}</Typography>
-      ))}
+      <Typography variant="h5" color="black" fontSize="25px" fontWeight={700}>
+        Selected Files:
+      </Typography>
+      <Box sx={{ flex: 1, overflow: "auto" }}>
+        {pathForFiles.map((path) => (
+          <Typography variant="h6">{path}</Typography>
+        ))}
+      </Box>
     </div>
   );
 };
