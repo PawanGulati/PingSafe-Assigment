@@ -7,9 +7,13 @@ import styles from "./SubmitContainer.module.css";
 
 interface ISubmitContainersProps {
   paths: FilesAndFolderStateType[];
+  handleResetState: () => void;
 }
 
-const SubmitContainer: React.FC<ISubmitContainersProps> = ({ paths }) => {
+const SubmitContainer: React.FC<ISubmitContainersProps> = ({
+  paths,
+  handleResetState,
+}) => {
   const [pathForFiles, setPathForFiles] = useState<string[]>([]);
 
   const handleSubmit = () => {
@@ -33,22 +37,39 @@ const SubmitContainer: React.FC<ISubmitContainersProps> = ({ paths }) => {
     setPathForFiles(filePaths);
   };
 
+  const handleReset = () => {
+    handleResetState();
+
+    setPathForFiles([]);
+  };
+
   return (
     <Box
       sx={{
         display: "flex",
         flexDirection: "column",
         gap: "2rem",
+        flex: 1,
       }}
     >
-      <Button
-        variant="contained"
-        size="large"
-        className={styles.submitButton}
-        onClick={handleSubmit}
-      >
-        Submit
-      </Button>
+      <Box sx={{ display: "flex", gap: 2, alignSelf: "center" }}>
+        <Button
+          variant="contained"
+          size="large"
+          className={styles.submitButton}
+          onClick={handleSubmit}
+        >
+          Submit
+        </Button>
+        <Button
+          variant="contained"
+          size="large"
+          className={styles.resetButton}
+          onClick={handleReset}
+        >
+          Reset
+        </Button>
+      </Box>
       <FolderPaths pathForFiles={pathForFiles} />
     </Box>
   );

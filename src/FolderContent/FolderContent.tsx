@@ -9,8 +9,11 @@ import { FilesAndFolderStateType } from "../App.interface";
 import styles from "./FolderContent.module.css";
 import { orange, pink } from "@mui/material/colors";
 
-import FolderOutlinedIcon from "@mui/icons-material/FolderOutlined";
+// import FolderOutlinedIcon from "@mui/icons-material/FolderOutlined";
+import FolderCopyIcon from "@mui/icons-material/FolderCopy";
+// import FolderIcon from "@mui/icons-material/Folder";
 import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
+// import FileCopyIcon from "@mui/icons-material/FileCopy";
 
 export const FolderContent: React.FC<{
   folderContent: FilesAndFolderStateType[];
@@ -41,7 +44,7 @@ export const FolderContent: React.FC<{
                     direction="row"
                     gap={1}
                   >
-                    <FolderOutlinedIcon sx={{ color: "gold" }} />
+                    <FolderCopyIcon sx={{ color: "gold" }} />
                     <Typography variant="h6">{content.name}</Typography>
                   </Stack>
                 }
@@ -85,7 +88,7 @@ export const FolderContent: React.FC<{
                   direction="row"
                   gap={1}
                 >
-                  <DescriptionOutlinedIcon sx={{ color: "blueviolet" }} />
+                  <DescriptionOutlinedIcon sx={{ color: "#FF6000" }} />
                   <Typography variant="h6">{content.name}</Typography>
                 </Stack>
               }

@@ -87,6 +87,10 @@ function App() {
     setFolderContents(copyFolderContent);
   };
 
+  const handleResetState = () => {
+    setFolderContents(getFilesAndFolderContent(filesAndFolders));
+  };
+
   return (
     <div className="main-container">
       <Typography className="heading" variant="h4">
@@ -99,7 +103,10 @@ function App() {
           handleChecked={handleChecked}
         />
       </div>
-      <SubmitContainer paths={folderContent} />
+      <SubmitContainer
+        paths={folderContent}
+        handleResetState={handleResetState}
+      />
     </div>
   );
 }
