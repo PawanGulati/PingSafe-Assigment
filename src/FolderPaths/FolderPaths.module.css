@@ -1,0 +1,8 @@
+.submitContainer {
+  flex: 1;
+  background: rgba(162, 205, 176, 0.5);
+  border-radius: 2rem;
+  padding: 1rem;
+  overflow: auto;
+  text-align: left;
+}
