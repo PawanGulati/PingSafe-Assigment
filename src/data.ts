@@ -55,6 +55,30 @@ export const filesAndFolders: FilesAndFolderType[] = [
         name: "App.css",
         isDirectory: false,
       },
+      {
+        id: 13,
+        name: "components",
+        isDirectory: true,
+        items: [
+          {
+            id: 13,
+            name: "component1",
+            isDirectory: true,
+            items: [
+              {
+                id: 15,
+                name: "component1.tsx",
+                isDirectory: false,
+              },
+            ],
+          },
+          {
+            id: 16,
+            name: "index.tsx",
+            isDirectory: false,
+          },
+        ],
+      },
     ],
   },
   {

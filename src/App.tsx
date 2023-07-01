@@ -35,6 +35,7 @@ function App() {
       checked: boolean
     ) => {
       content.checked = checked;
+      content.indeterminate = false;
       if (content.isDirectory) {
         content.items?.forEach((item) => {
           _handleAllCheck(item, checked);

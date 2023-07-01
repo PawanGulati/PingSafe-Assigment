@@ -9,11 +9,8 @@ import { FilesAndFolderStateType } from "../App.interface";
 import styles from "./FolderContent.module.css";
 import { orange, pink } from "@mui/material/colors";
 
-// import FolderOutlinedIcon from "@mui/icons-material/FolderOutlined";
 import FolderCopyIcon from "@mui/icons-material/FolderCopy";
-// import FolderIcon from "@mui/icons-material/Folder";
 import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
-// import FileCopyIcon from "@mui/icons-material/FileCopy";
 
 export const FolderContent: React.FC<{
   folderContent: FilesAndFolderStateType[];
